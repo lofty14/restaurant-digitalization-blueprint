@@ -41,7 +41,7 @@ flowchart TB
         PROD["生产域<br/>研发档案 · 成本卡 · 工单/批次/追溯"]
         FIN["财务域<br/>自建内账引擎(事件源自动凭证)"]
         GROW["增长域<br/>选址 · CRM 招商 · 外卖运营"]
-        AIBOT["AI 域<br/>改码机器人 · 岗位 AI 助手"]
+        AIBOT["AI 域<br/>改码机器人 · 岗位助手<br/>视觉巡检 · 群聊客服办事"]
     end
     subgraph EXTSYS["第三方"]
         IM["企业 IM(飞书/钉钉/企微)"]
@@ -121,6 +121,7 @@ flowchart TB
 | [机器人体系](04-ai-engineering/bots-architecture.md) | 改码机器人(需求→AI改码→人审批→部署)+ 岗位 AI 助手 |
 | [CLAUDE.md](04-ai-engineering/claude-md-practice.md) | 给 AI 的入职手册怎么写;业务名词→代码落点对照表 |
 | [记忆方法论](04-ai-engineering/memory-methodology.md) | 让 AI 跨会话沉淀教训,越用越懂你的系统 |
+| [业务型 AI](04-ai-engineering/business-ai.md) | AI 直接上岗:视觉巡检(问候/开档/穿戴)+ 群聊客服聊天即操作(录营业额/兑积分/领券) |
 | [AI 产出的质量纪律](04-ai-engineering/ai-review-discipline.md) | 对抗复查、同款病全库 grep、鉴权双向验证、多 agent 共处 |
 
 ### [05 · AI 复刻指南](05-replication/README.md) — 按序喂给 AI 的施工指令
@@ -132,7 +133,7 @@ flowchart TB
 | M3 交易 | [02-ordering-mall](05-replication/prompts/02-ordering-mall.md) · [03-inventory](05-replication/prompts/03-inventory.md) | 订货商城 + 库存 |
 | M4 运营 | [04-points-daily-ops](05-replication/prompts/04-points-daily-ops.md) · [05-turnover-dashboards](05-replication/prompts/05-turnover-dashboards.md) · [06-inspection-score](05-replication/prompts/06-inspection-score.md) · [07-delivery-platforms](05-replication/prompts/07-delivery-platforms.md) · [11-site-crm](05-replication/prompts/11-site-crm.md) | 积分开收档 / 营业额看板 / 巡检经营分 / 外卖集成 / 选址 CRM |
 | M5 深水区 | [08-production-costing](05-replication/prompts/08-production-costing.md) · [09-finance-ledger](05-replication/prompts/09-finance-ledger.md) | 生产成本 + 内账引擎 |
-| M6 AI | [10-ai-assistant](05-replication/prompts/10-ai-assistant.md) | 岗位 AI 助手接入 IM |
+| M6 AI | [10-ai-assistant](05-replication/prompts/10-ai-assistant.md) · [12-wechat-chatops](05-replication/prompts/12-wechat-chatops.md) | 岗位 AI 助手接入 IM + 群聊客服机器人(聊天即操作) |
 
 ---
 

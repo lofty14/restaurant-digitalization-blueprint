@@ -31,7 +31,7 @@
 | **M3 交易与库存** | [02-ordering-mall](prompts/02-ordering-mall.md) · [03-inventory](prompts/03-inventory.md) | 订货商城(价格快照) / 库存四量 | M2 |
 | **M4 运营模块** | [04-points-daily-ops](prompts/04-points-daily-ops.md) · [05-turnover-dashboards](prompts/05-turnover-dashboards.md) · [06-inspection-score](prompts/06-inspection-score.md) · [07-delivery-platforms](prompts/07-delivery-platforms.md) · [11-site-crm](prompts/11-site-crm.md) | 积分+开收档+日报 / 营业额+看板 / 巡检+经营分 / 外卖平台集成 / 选址+CRM | 04/07/11 只依赖 M2;05 依赖 M3(订货锁框架);06 依赖 M3 + 05(营业额取数) |
 | **M5 深水区** | [08-production-costing](prompts/08-production-costing.md) · [09-finance-ledger](prompts/09-finance-ledger.md) | 生产+成本 / 自建内账引擎 | M3 |
-| **M6 AI 助手** | [10-ai-assistant](prompts/10-ai-assistant.md) | 岗位 AI 助手 | M1;已建成的模块越多,助手能答的越多 |
+| **M6 AI 助手** | [10-ai-assistant](prompts/10-ai-assistant.md) · [12-wechat-chatops](prompts/12-wechat-chatops.md) | 岗位 AI 助手 / 群聊客服机器人(聊天即操作) | 10 依赖 M1,已建成的模块越多助手能答的越多;12 依赖 10 与 M4 的 04(积分)、05(营业额) |
 
 ```mermaid
 graph LR

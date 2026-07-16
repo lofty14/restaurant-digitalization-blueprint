@@ -142,6 +142,7 @@ sequenceDiagram
 - [CLAUDE.md:给 AI 的入职手册](claude-md-practice.md) —— 机器人「看得懂代码库」的前提
 - [记忆方法论:让 AI 越用越懂你的系统](memory-methodology.md) —— 会话记忆之上的长期记忆
 - [AI 产出的质量纪律](ai-review-discipline.md) —— 审批闸门背后的质量方法
+- [业务型 AI:视觉巡检与聊天即操作](business-ai.md) —— 机器人体系面向门店一线的另一半:看店、答疑、办事
 - [M6 岗位 AI 助手(复刻 prompt)](../05-replication/prompts/10-ai-assistant.md) —— 想照着搭一套,从这里开始
 
 ---

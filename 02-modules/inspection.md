@@ -139,6 +139,7 @@ flowchart LR
 - [营业额:录入、抓取与达标锁](turnover.md) — 经营分的重要数据来源板块
 - [门店日常运营:开收档与工作日报](daily-ops.md) — 日常运营板块的数据来源
 - [数据口径:最贵的一类坑](../03-pitfalls/data-caliber.md) — 规则版本化是口径问题的一个特例
+- [业务型 AI:视觉巡检与聊天即操作](../04-ai-engineering/business-ai.md) — 人巡检之外,AI 摄像头每天在岗的高频补充
 - 复刻 prompt:[M4 巡检 + 经营分](../05-replication/prompts/06-inspection-score.md)
 
 ---
