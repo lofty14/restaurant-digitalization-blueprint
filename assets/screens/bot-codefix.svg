@@ -1,0 +1,56 @@
+<svg viewBox="0 0 580 660" width="580" height="660" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif">
+  <rect x="0" y="0" width="580" height="660" rx="14" fill="#e2e8f0"/>
+  <rect x="10" y="10" width="560" height="640" rx="10" fill="#f5f6f7" stroke="#cbd5e1"/>
+
+  <!-- 顶栏(飞书风格) -->
+  <rect x="10" y="10" width="560" height="52" rx="10" fill="#ffffff"/>
+  <rect x="10" y="42" width="560" height="20" fill="#ffffff"/>
+  <line x1="10" y1="62" x2="570" y2="62" stroke="#e5e7eb"/>
+  <text x="30" y="42" font-size="15" font-weight="700" fill="#1f2329">研发协作群</text>
+  <text x="132" y="42" font-size="12" fill="#8f959e">12 人 · 飞书</text>
+
+  <!-- 消息1:业务同学提需求 -->
+  <circle cx="42" cy="96" r="16" fill="#ffd6a5"/>
+  <text x="42" y="101" text-anchor="middle" font-size="12">🧑‍💼</text>
+  <text x="70" y="90" font-size="11" fill="#8f959e">运营同学</text>
+  <rect x="70" y="98" width="360" height="52" rx="9" fill="#ffffff" stroke="#e5e7eb"/>
+  <text x="86" y="120" font-size="13" fill="#1f2329"><tspan fill="#3370ff">@改码机器人</tspan> 订货单导出想加一列</text>
+  <text x="86" y="140" font-size="13" fill="#1f2329">「配送方式」,区分冷链和快递</text>
+
+  <!-- 消息2:机器人方案卡片 -->
+  <circle cx="42" cy="188" r="16" fill="#c7d7fe"/>
+  <text x="42" y="193" text-anchor="middle" font-size="12">🤖</text>
+  <text x="70" y="182" font-size="11" fill="#8f959e">改码机器人</text>
+  <rect x="70" y="190" width="440" height="234" rx="9" fill="#ffffff" stroke="#e5e7eb"/>
+  <rect x="70" y="190" width="440" height="40" rx="9" fill="#eff4ff"/>
+  <rect x="70" y="216" width="440" height="14" fill="#eff4ff"/>
+  <text x="88" y="215" font-size="13" font-weight="700" fill="#3370ff">📋 需求已理解,改动方案如下</text>
+  <g font-size="12.5" fill="#1f2329">
+    <text x="88" y="254">影响范围:订货单导出接口 + 前端导出表头</text>
+    <text x="88" y="280" fill="#646a73">拟改动 2 个文件:</text>
+    <text x="100" y="304" font-family="Menlo, monospace" font-size="11.5" fill="#0f766e">backend/order_export_view.py  +6 -1</text>
+    <text x="100" y="324" font-family="Menlo, monospace" font-size="11.5" fill="#0f766e">front/orderExport/columns.ts  +3 -0</text>
+    <text x="88" y="350" fill="#646a73">口径:读单据快照字段,冷链/快递按下单时冻结值</text>
+  </g>
+  <rect x="88" y="368" width="110" height="32" rx="7" fill="#3370ff"/>
+  <text x="143" y="389" text-anchor="middle" font-size="13" fill="#ffffff" font-weight="600">✓ 批准执行</text>
+  <rect x="210" y="368" width="110" height="32" rx="7" fill="#ffffff" stroke="#d0d3d6"/>
+  <text x="265" y="389" text-anchor="middle" font-size="13" fill="#1f2329">✎ 提出修改</text>
+
+  <!-- 系统提示 -->
+  <text x="290" y="454" text-anchor="middle" font-size="11" fill="#8f959e">— 管理员已点击「批准执行」 —</text>
+
+  <!-- 消息3:机器人完成回执 -->
+  <circle cx="42" cy="496" r="16" fill="#c7d7fe"/>
+  <text x="42" y="501" text-anchor="middle" font-size="12">🤖</text>
+  <text x="70" y="490" font-size="11" fill="#8f959e">改码机器人</text>
+  <rect x="70" y="498" width="440" height="118" rx="9" fill="#ffffff" stroke="#e5e7eb"/>
+  <g font-size="12.5" fill="#1f2329">
+    <text x="88" y="526" font-weight="700" fill="#16a34a">✅ 已改码完成并部署上线(耗时 6 分钟)</text>
+    <text x="88" y="552">· 后端已热重启,前端已发布并刷新缓存</text>
+    <text x="88" y="574">· 自测:导出文件新增「配送方式」列,数值正确</text>
+    <text x="88" y="596" fill="#646a73">现在导出订货单即可看到新列,有问题随时 @我</text>
+  </g>
+
+  <text x="556" y="644" text-anchor="end" font-size="11" fill="#94a3b8">对话示意图 · 内容为虚构示例</text>
+</svg>

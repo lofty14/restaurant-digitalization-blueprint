@@ -1,0 +1,64 @@
+<svg viewBox="0 0 580 660" width="580" height="660" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif">
+  <rect x="0" y="0" width="580" height="660" rx="14" fill="#e2e8f0"/>
+  <rect x="10" y="10" width="560" height="640" rx="10" fill="#ededed" stroke="#cbd5e1"/>
+
+  <!-- 顶栏(微信风格) -->
+  <rect x="10" y="10" width="560" height="52" rx="10" fill="#ededed"/>
+  <line x1="10" y1="62" x2="570" y2="62" stroke="#d7d7d7"/>
+  <text x="290" y="43" text-anchor="middle" font-size="15" font-weight="600" fill="#111111">示例一店·门店群(23)</text>
+  <text x="548" y="43" text-anchor="end" font-size="16" fill="#111111">⋯</text>
+
+  <!-- 消息1:店长录营业额(右侧绿泡) -->
+  <text x="500" y="92" text-anchor="end" font-size="11" fill="#9b9b9b">店长</text>
+  <rect x="216" y="100" width="284" height="40" rx="8" fill="#95ec69"/>
+  <text x="232" y="125" font-size="13.5" fill="#111111"><tspan font-weight="600">@门店助手</tspan> 今日营业额 3560</text>
+  <circle cx="532" cy="120" r="17" fill="#f4c790"/>
+  <text x="532" y="126" text-anchor="middle" font-size="13">👩‍🍳</text>
+
+  <!-- 消息2:机器人回执(左侧白泡) -->
+  <circle cx="48" cy="180" r="17" fill="#b6e0c8"/>
+  <text x="48" y="186" text-anchor="middle" font-size="13">🤖</text>
+  <text x="80" y="172" font-size="11" fill="#9b9b9b">门店助手</text>
+  <rect x="80" y="180" width="330" height="86" rx="8" fill="#ffffff"/>
+  <g font-size="13" fill="#111111">
+    <text x="96" y="206" font-weight="700" fill="#07c160">✅ 营业额已录入</text>
+    <text x="96" y="230">7月16日 · ¥3,560 · 示例一店</text>
+    <text x="96" y="252" fill="#9b9b9b" font-size="12">本月录入率 100%,继续保持,不影响订货</text>
+  </g>
+
+  <!-- 消息3:店员兑积分(右侧绿泡) -->
+  <text x="500" y="304" text-anchor="end" font-size="11" fill="#9b9b9b">店员</text>
+  <rect x="196" y="312" width="304" height="40" rx="8" fill="#95ec69"/>
+  <text x="212" y="337" font-size="13.5" fill="#111111"><tspan font-weight="600">@门店助手</tspan> 用积分换一箱手套</text>
+  <circle cx="532" cy="332" r="17" fill="#a8d8f0"/>
+  <text x="532" y="338" text-anchor="middle" font-size="13">🧑‍🍳</text>
+
+  <!-- 消息4:机器人兑换回执 -->
+  <circle cx="48" cy="392" r="17" fill="#b6e0c8"/>
+  <text x="48" y="398" text-anchor="middle" font-size="13">🤖</text>
+  <text x="80" y="384" font-size="11" fill="#9b9b9b">门店助手</text>
+  <rect x="80" y="392" width="330" height="108" rx="8" fill="#ffffff"/>
+  <g font-size="13" fill="#111111">
+    <text x="96" y="418" font-weight="700" fill="#07c160">🎁 兑换成功</text>
+    <text x="96" y="442">一次性手套 ×1 箱(500 积分)</text>
+    <text x="96" y="464">门店剩余积分:1,280</text>
+    <text x="96" y="486" fill="#9b9b9b" font-size="12">礼品单已生成,随下次订货一起配送</text>
+  </g>
+
+  <!-- 消息5:店长问业务问题 -->
+  <text x="500" y="538" text-anchor="end" font-size="11" fill="#9b9b9b">店长</text>
+  <rect x="176" y="546" width="324" height="40" rx="8" fill="#95ec69"/>
+  <text x="192" y="571" font-size="13.5" fill="#111111"><tspan font-weight="600">@门店助手</tspan> 羊肉串现在订货价多少</text>
+  <circle cx="532" cy="566" r="17" fill="#f4c790"/>
+  <text x="532" y="572" text-anchor="middle" font-size="13">👩‍🍳</text>
+
+  <!-- 机器人打字中 -->
+  <circle cx="48" cy="618" r="17" fill="#b6e0c8"/>
+  <text x="48" y="624" text-anchor="middle" font-size="13">🤖</text>
+  <rect x="80" y="604" width="66" height="30" rx="8" fill="#ffffff"/>
+  <circle cx="100" cy="619" r="3" fill="#c0c0c0"/>
+  <circle cx="113" cy="619" r="3" fill="#9b9b9b"/>
+  <circle cx="126" cy="619" r="3" fill="#6b6b6b"/>
+
+  <text x="556" y="644" text-anchor="end" font-size="11" fill="#94a3b8">对话示意图 · 内容为虚构示例</text>
+</svg>
