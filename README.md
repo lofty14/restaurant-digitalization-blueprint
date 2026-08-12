@@ -14,9 +14,11 @@
 | ✅ 有 | ❌ 没有 |
 |---|---|
 | 经真实门店验证的连锁数字化**整体方案**,全部用自然语言写成 | 源代码——方案与技术栈解耦,AI 时代照蓝图重建比读老代码更快 |
-| 14 个业务模块的流程、领域模型与口径红线 | 任何配方、原料用量、工艺参数(只讲研发/生产模块的**结构**) |
+| 19 个业务模块的流程、领域模型与口径红线 | 任何配方、原料用量、工艺参数(只讲研发/生产模块的**结构**) |
 | 我们踩过、你可以直接跳过的坑:**症状 → 根因 → 铁律** | 任何财务税务、公司主体安排(只讲记账引擎的**模式**) |
-| 13 条可按序直接喂给 AI 编程助手的**施工指令** | 任何真实经营数据(正文数字均为虚构;截图仅作界面展示) |
+| 16 条可按序直接喂给 AI 编程助手的**施工指令** | 任何真实经营数据(正文数字均为虚构;截图仅作界面展示) |
+
+> 📌 **2026-08 更新**:新增 5 个模块页(外卖逐单毛利 / 费用审批与工资 / 资产台账 / 冷链与工厂 IoT / 看板与车间大屏)与 M7 里程碑的 3 份施工指令,并回填了近一个月的新踩坑。完整清单见 [更新日志](CHANGELOG.md)。
 
 ---
 
@@ -52,7 +54,7 @@
 
 ![元财务财务总览截图](assets/screens/finance-overview.png)
 
-> 💡 **这套财务体系跑出来的效果**:订货、生产、仓库、资金、报销(飞书审批)数据全打通,财务日常 **0 Excel 表格**;银行流水银企直联自动拉取、与业务收付自动匹配入账,内账自动汇总推送外账系统;每天需要人工处理的只有**不到 5%** 的匹配失败账目——财务做内账的时间:**每天约 10 分钟,每月结账约 1 小时**。怎么做到的,见[自建内账引擎](02-modules/finance-ledger.md)。
+> 💡 **这套财务体系跑出来的效果**:订货、生产、仓库、资金、[报销与工资](02-modules/expense-payroll.md)数据全打通,财务日常 **0 Excel 表格**;银行流水银企直联自动拉取、与业务收付自动匹配入账,内账自动汇总推送外账系统;每天需要人工处理的只有**不到 5%** 的匹配失败账目——财务做内账的时间:**每天约 10 分钟,每月结账约 1 小时**。怎么做到的,见[自建内账引擎](02-modules/finance-ledger.md)。
 
 ---
 
@@ -78,10 +80,10 @@
 | 层 | 讲什么 | 先读这几页 |
 |---|---|---|
 | [01 · 架构与决策](01-architecture/README.md) | 技术底座怎么选、怎么部署,以及"发了却没生效"的坑 | [技术选型](01-architecture/tech-stack.md) · [四端拆分](01-architecture/four-repos.md) |
-| [02 · 业务模块蓝图 ×14](02-modules/README.md) | 每个模块讲透:流程、领域模型、口径红线 | [订货商城](02-modules/ordering-mall.md) · [库存](02-modules/inventory.md) · [自建内账引擎](02-modules/finance-ledger.md) |
+| [02 · 业务模块蓝图 ×19](02-modules/README.md) | 每个模块讲透:流程、领域模型、口径红线 | [订货商城](02-modules/ordering-mall.md) · [库存](02-modules/inventory.md) · [自建内账引擎](02-modules/finance-ledger.md) · [外卖逐单毛利](02-modules/wm-margin.md) |
 | [03 · 踩坑实录](03-pitfalls/README.md) | 症状 → 根因 → 铁律,按端分四页 | [数据口径](03-pitfalls/data-caliber.md)(最贵的一类坑) |
 | [04 · AI 工程实践](04-ai-engineering/README.md) | 1 个人干出一个团队产能的方法论 | [机器人体系](04-ai-engineering/bots-architecture.md) · [记忆方法论](04-ai-engineering/memory-methodology.md) · [业务型 AI](04-ai-engineering/business-ai.md) |
-| [05 · AI 复刻指南 ×13](05-replication/README.md) | 按 M1~M6 里程碑排好序、可直接喂给 AI 的施工指令 | 从 [00-bootstrap](05-replication/prompts/00-bootstrap.md) 开始 |
+| [05 · AI 复刻指南 ×16](05-replication/README.md) | 按 M1~M7 里程碑排好序、可直接喂给 AI 的施工指令 | 从 [00-bootstrap](05-replication/prompts/00-bootstrap.md) 开始 |
 
 ## 三种打开方式
 
