@@ -64,6 +64,7 @@ flowchart LR
 - [踩坑实录:怎么读这一层](../03-pitfalls/README.md) — 第三层的坑,大多已经按本层方法沉淀成了 AI 可读的文档
 - [数据口径:最贵的一类坑](../03-pitfalls/data-caliber.md) — 口径文档为什么是知识工程里最值钱的部分
 - [AI 复刻路线图与里程碑](../05-replication/README.md) — 把本层方法用在「从零复刻」上的完整路线
+- [附录 · IM Agent 平台施工图](../06-appendix/agent-platform-blueprint.md) — 本层[机器人体系](bots-architecture.md)与[记忆方法论](memory-methodology.md)的**可施工版**:端点契约、单表状态机、多账号池、知识库双脑同步
 
 ---
 
