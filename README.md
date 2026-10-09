@@ -14,13 +14,13 @@
 | ✅ 有 | ❌ 没有 |
 |---|---|
 | 经真实门店验证的连锁数字化**整体方案**,正文全部用自然语言写成 | 源代码——方案与技术栈解耦,AI 时代照蓝图重建比读老代码更快([附录](06-appendix/README.md)里有通用示例伪码,同样不是产品源码) |
-| 19 个业务模块的流程、领域模型与口径红线 | 任何配方、原料用量、工艺参数(只讲研发/生产模块的**结构**) |
+| 26 个业务模块的流程、领域模型与口径红线 | 任何配方、原料用量、工艺参数(只讲研发/生产模块的**结构**) |
 | 我们踩过、你可以直接跳过的坑:**症状 → 根因 → 铁律** | 任何财务税务、公司主体安排(只讲记账引擎的**模式**) |
-| 16 条可按序直接喂给 AI 编程助手的**施工指令** | 任何真实经营数据(正文数字均为虚构;截图仅作界面展示) |
+| 19 条可按序直接喂给 AI 编程助手的**施工指令** | 任何真实经营数据(正文数字均为虚构;截图仅作界面展示) |
 
-> 📌 **最新更新**:新增[附录层](06-appendix/README.md)——[IM Agent 平台施工图](06-appendix/agent-platform-blueprint.md),把「IM 里 @ 机器人 → 本机 AI 客户端干活 → 成品发回群」这件事写到可直接施工的精度(端点契约 / 单表状态机 / 多账号池 / 知识库双脑同步)。
+> 📌 **最新更新(2026-10)**:AI 开始接管一线——新增 7 个模块页([线上客服 AI](02-modules/wm-ai-service.md) / [智能采购与排产](02-modules/smart-supply.md) / [开票、税务与资金侧自动化](02-modules/invoice-tax.md) / [工厂摄像头 AI 巡检](02-modules/factory-ai-inspection.md) / [机组联网与收工自动关机](02-modules/equipment-automation.md) / [质检与计量](02-modules/quality-control.md) / [认证记录自动生成](02-modules/certification-records.md))与 M8「AI 接管一线」的 3 份施工指令,补充了十余个既有页,并回填了近六周的新踩坑。完整清单见 [更新日志](CHANGELOG.md)。
 >
-> 📌 **2026-08 更新**:新增 5 个模块页(外卖逐单毛利 / 费用审批与工资 / 资产台账 / 冷链与工厂 IoT / 看板与车间大屏)与 M7 里程碑的 3 份施工指令,并回填了近一个月的新踩坑。完整清单见 [更新日志](CHANGELOG.md)。
+> 历史更新:2026-08-30 新增[附录层](06-appendix/README.md)——[IM Agent 平台施工图](06-appendix/agent-platform-blueprint.md);2026-08 新增 5 个模块页(外卖逐单毛利 / 费用审批与工资 / 资产台账 / 冷链与工厂 IoT / 看板与车间大屏)与 M7 的 3 份施工指令。
 
 ---
 
@@ -43,6 +43,12 @@
 | 个微门店群 · 聊天即操作<br/>店长 @机器人查营业额;收档提交后机器人自动回执 | 个微门店群 · AI 视觉巡检<br/>开档问候 + 摄像头穿戴合规识别,异常带截图直接发到店群 |
 |---|---|
 | <img src="assets/screens/wechat-chatops.jpg" width="380" alt="门店群聊天办事截图"> | <img src="assets/screens/wechat-ai-inspection.jpg" width="380" alt="门店群AI巡检告警截图"> |
+
+| 工厂 AI 巡检大屏<br/>按点位抓拍、违规实时进台账 | 线上客服助手控制台<br/>待回、超时、紧急电话、交接班一页看 |
+|---|---|
+| <img src="assets/screens/factory-ai-wall.jpg" width="380" alt="工厂AI巡检大屏截图"> | <img src="assets/screens/wm-ai-console.jpg" width="380" alt="线上客服助手控制台截图"> |
+
+<sub>以上两张为 2026-10 新增,截图已脱敏(设备序列号与内部访问路径已遮盖)。</sub>
 
 **选址助手的日报成品** —— 公开人口格网 + 地图 POI 算商圈性价比,每天一张图,评估仅供参考、定铺由人拍板
 
@@ -82,16 +88,16 @@
 | 层 | 讲什么 | 先读这几页 |
 |---|---|---|
 | [01 · 架构与决策](01-architecture/README.md) | 技术底座怎么选、怎么部署,以及"发了却没生效"的坑 | [技术选型](01-architecture/tech-stack.md) · [四端拆分](01-architecture/four-repos.md) |
-| [02 · 业务模块蓝图 ×19](02-modules/README.md) | 每个模块讲透:流程、领域模型、口径红线 | [订货商城](02-modules/ordering-mall.md) · [库存](02-modules/inventory.md) · [自建内账引擎](02-modules/finance-ledger.md) · [外卖逐单毛利](02-modules/wm-margin.md) |
+| [02 · 业务模块蓝图 ×26](02-modules/README.md) | 每个模块讲透:流程、领域模型、口径红线 | [订货商城](02-modules/ordering-mall.md) · [库存](02-modules/inventory.md) · [自建内账引擎](02-modules/finance-ledger.md) · [外卖逐单毛利](02-modules/wm-margin.md) |
 | [03 · 踩坑实录](03-pitfalls/README.md) | 症状 → 根因 → 铁律,按端分四页 | [数据口径](03-pitfalls/data-caliber.md)(最贵的一类坑) |
 | [04 · AI 工程实践](04-ai-engineering/README.md) | 1 个人干出一个团队产能的方法论 | [机器人体系](04-ai-engineering/bots-architecture.md) · [记忆方法论](04-ai-engineering/memory-methodology.md) · [业务型 AI](04-ai-engineering/business-ai.md) |
-| [05 · AI 复刻指南 ×16](05-replication/README.md) | 按 M1~M7 里程碑排好序、可直接喂给 AI 的施工指令 | 从 [00-bootstrap](05-replication/prompts/00-bootstrap.md) 开始 |
+| [05 · AI 复刻指南 ×19](05-replication/README.md) | 按 M1~M8 里程碑排好序、可直接喂给 AI 的施工指令 | 从 [00-bootstrap](05-replication/prompts/00-bootstrap.md) 开始 |
 | [附录 · 技术施工图](06-appendix/README.md) | 少数需要精确到接口契约才能复刻的东西,业务无关 | [IM Agent 平台施工图](06-appendix/agent-platform-blueprint.md) |
 
 ## 三种打开方式
 
-- **👔 老板 / 业务负责人(15 分钟)**:读 [02 层模块全景](02-modules/README.md) 看每个模块解决什么问题,再读 [数据口径坑](03-pitfalls/data-caliber.md) 和 [04 层导读](04-ai-engineering/README.md)——知道该向团队要什么。
-- **🛠 技术负责人(2 小时)**:01 层全部 → 02 层按推荐顺序 → 03 层全部 → 04 层。读完你就知道每一步的深浅。
+- **👔 老板 / 业务负责人(15 分钟)**:读 [02 层模块全景](02-modules/README.md) 看每个模块解决什么问题,挑 [线上客服 AI](02-modules/wm-ai-service.md) 与 [智能采购与排产](02-modules/smart-supply.md) 两页看 AI 怎么接手一线的活,再读 [数据口径坑](03-pitfalls/data-caliber.md) 和 [04 层导读](04-ai-engineering/README.md)——知道该向团队要什么。
+- **🛠 技术负责人(2 小时)**:01 层全部 → 02 层按推荐顺序 → 03 层全部 → 04 层 → [附录](06-appendix/README.md)。读完你就知道每一步的深浅。
 - **🤖 直接让 AI 干活(约一至数周)**:见下方快速开始。
 
 ## 快速开始:让 AI 复刻一套
