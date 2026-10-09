@@ -9,6 +9,10 @@
 
 四个仓库(后端 / 管理端 Web / 门店小程序 / 官网)各自独立发版,后端单体是唯一的数据与接口中枢——为什么这样拆,见[四端拆分](01-architecture/four-repos.md)。
 
+## English summary
+
+This repository is a blueprint, written entirely in natural language, for digitalizing a Chinese restaurant chain end to end with AI. It comes from a real, operating Chinese skewer-restaurant chain, where one engineer plus AI built and runs the whole system: ordering, inventory, central production, finance, store operations, delivery platforms, site selection and franchising. Inside you will find 26 module blueprints covering flows, domain models and metric definitions; 19 AI-executable build prompts across 8 milestones, each ending with an acceptance checklist; pitfalls written as symptom → root cause → rule; and the AI engineering practice that lets one person deliver the output of a team. There is no source code and no real business data: every figure in the text is fictional. The content is released under the MIT license. Non-Chinese readers do not need to read Chinese first: hand the repository to an AI coding assistant and ask it to build layer 05 milestone by milestone, starting from [00-bootstrap](05-replication/prompts/00-bootstrap.md).
+
 ## 这里有什么
 
 | ✅ 有 | ❌ 没有 |
@@ -66,9 +70,9 @@
 
 ---
 
-## 贯穿全书的六个原则
+## 贯穿全书的七个原则
 
-六条反复验证过的骨架思想,后面每一层都会反复出现:
+七条反复验证过的骨架思想,后面每一层都会反复出现:
 
 | # | 原则 | 一句话 | 详见 |
 |---|------|--------|------|
@@ -78,6 +82,7 @@
 | 4 | **单体 + AI** | 小团队别碰微服务;单体仓库对 AI 的上下文最友好 | [技术选型](01-architecture/tech-stack.md) |
 | 5 | **锁与豁免** | 用业务锁(如锁订货)换数据质量,但豁免必须收敛到统一入口 | [订货商城](02-modules/ordering-mall.md)(正篇) · [营业额](02-modules/turnover.md) · [巡检经营分](02-modules/inspection.md) |
 | 6 | **人机半自动** | 拿不到官方 API 就承认现实:插件抓取 + SOP + 失败告警,人做最后一环 | [外卖平台集成](02-modules/delivery-platforms.md) |
+| 7 | **先影子、再限额、后放权** | 凡是让 AI 或规则替人做决定的功能(自动下单、客服代回、流水认领、收工关机),一律先影子运行只记不动,再限额真跑,最后按品/按场景放权,且每一级都能一键退回 | [智能采购与排产](02-modules/smart-supply.md) · [线上客服 AI](02-modules/wm-ai-service.md) · [开票、税务与资金侧自动化](02-modules/invoice-tax.md) · [机组联网与收工自动关机](02-modules/equipment-automation.md) |
 
 ---
 
